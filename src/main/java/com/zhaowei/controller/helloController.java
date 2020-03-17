@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-eipublic class helloController {
+public class helloController {
   @GetMapping("/hello")
     public String hello(@RequestParam(name="name") String name, Model model){
         model.addAttribute("name",name);
